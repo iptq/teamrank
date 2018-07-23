@@ -1,0 +1,4 @@
+.data
+.virtualenv
+__pycache__
+*.pyc
