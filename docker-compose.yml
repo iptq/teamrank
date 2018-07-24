@@ -3,3 +3,8 @@ version: '3'
 services:
   web:
     build: .
+    network_mode: 'host'
+    ports:
+      - 4410
+    env_file: .env
+

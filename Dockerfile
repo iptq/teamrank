@@ -13,6 +13,5 @@ RUN pip install -r /app/requirements.txt
 
 # main app now
 COPY . /app/
-EXPOSE 5000
 
-ENTRYPOINT ["/usr/local/bin/gunicorn", "-b", "0.0.0.0:5000", "teamrank.create_app()"]
+ENTRYPOINT ["/usr/local/bin/gunicorn", "-b", "0.0.0.0:4410", "teamrank:create_app()"]
